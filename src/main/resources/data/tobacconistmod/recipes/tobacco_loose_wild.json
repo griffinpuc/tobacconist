@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "tobacconistmod:tobacco_leaf_wild"
+      },
+      {
+        "item": "tobacconistmod:tobacco_leaf_virginia"
+      },
+      {
+        "item": "tobacconistmod:tobacco_leaf_burley"
+      },
+      {
+        "item": "tobacconistmod:tobacco_leaf_oriental"
+      },
+      {
+        "item": "tobacconistmod:tobacco_leaf_dokha"
+      },
+      {
+        "item": "tobacconistmod:tobacco_leaf_shade"
+      }
+    ]
+  ],
+  "result": {
+    "item": "tobacconistmod:tobacco_loose_wild",
+    "count": 3
+  }
+}

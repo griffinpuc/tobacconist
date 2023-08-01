@@ -1,0 +1,47 @@
+{
+  "itemGroup.tobacconistmod": "Herbalist Mod",
+
+  "item.tobacconistmod.wooden_smoking_pipe": "Wooden Smoking Pipe",
+  "item.tobacconistmod.gold_smoking_pipe": "Golden Smoking Pipe",
+  "item.tobacconistmod.rolling_paper": "Rolling Papers",
+  "item.tobacconistmod.cigar": "Cigar",
+  "item.tobacconistmod.cigarette": "Cigarette",
+
+  "item.tobacconistmod.bottled_molasses": "Bottle of Molasses",
+  "item.tobacconistmod.shisha_tobacco": "Shisha Tobacco",
+
+  "item.tobacconistmod.tobacco_leaf_wild": "Wild Tobacco Leaf",
+  "item.tobacconistmod.tobacco_leaf_virginia": "Virginia Tobacco Leaf",
+  "item.tobacconistmod.tobacco_leaf_burley": "Burley Tobacco Leaf",
+  "item.tobacconistmod.tobacco_leaf_oriental": "Oriental Tobacco Leaf",
+  "item.tobacconistmod.tobacco_leaf_dokha": "Dokha Tobacco Leaf",
+  "item.tobacconistmod.tobacco_leaf_shade": "Shade Tobacco Leaf",
+
+  "item.tobacconistmod.tobacco_loose_wild": "Loose Wild Tobacco",
+  "item.tobacconistmod.tobacco_loose_virginia": "Loose Virginia Tobacco",
+  "item.tobacconistmod.tobacco_loose_burley": "Loose Burley Tobacco",
+  "item.tobacconistmod.tobacco_loose_oriental": "Loose Oriental Tobacco",
+  "item.tobacconistmod.tobacco_loose_dokha": "Loose Dokha Tobacco",
+  "item.tobacconistmod.tobacco_loose_shade": "Loose Shade Tobacco",
+
+  "item.tobacconistmod.tobacco_leaf_wild_dry": "Wild Tobacco Leaf (Dried)",
+  "item.tobacconistmod.tobacco_leaf_virginia_dry": "Virginia Tobacco Leaf (Dried)",
+  "item.tobacconistmod.tobacco_leaf_burley_dry": "Burley Tobacco Leaf (Dried)",
+  "item.tobacconistmod.tobacco_leaf_oriental_dry": "Oriental Tobacco Leaf (Dried)",
+  "item.tobacconistmod.tobacco_leaf_dokha_dry": "Dokha Tobacco Leaf (Dried)",
+  "item.tobacconistmod.tobacco_leaf_shadedry": "Shade Tobacco Leaf (Dried)",
+
+  "item.tobacconistmod.tobacco_seeds_wild": "Wild Tobacco Seeds",
+  "item.tobacconistmod.tobacco_seeds_virginia": "Virginia Tobacco Seeds",
+  "item.tobacconistmod.tobacco_seeds_burley": "Burley Tobacco Seeds",
+  "item.tobacconistmod.tobacco_seeds_oriental": "Oriental Tobacco Seeds",
+  "item.tobacconistmod.tobacco_seeds_dokha": "Dokha Tobacco Seeds",
+  "item.tobacconistmod.tobacco_seeds_shade": "Shade Tobacco Seeds",
+
+  "block.tobacconistmod.tobacco_crop_wild": "Wild Tobacco Crop",
+  "block.tobacconistmod.tobacco_crop_virginia": "Virginia Tobacco Crop",
+  "block.tobacconistmod.tobacco_crop_burley": "Burley Tobacco Crop",
+  "block.tobacconistmod.tobacco_crop_oriental": "Oriental Tobacco Crop",
+  "block.tobacconistmod.tobacco_crop_dokha": "Dokha Tobacco Crop",
+  "block.tobacconistmod.tobacco_crop_shade": "Shade Tobacco Crop"
+}

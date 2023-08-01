@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tobacconist:tobacco_leaf_wild"
+  },
+  "result": "tobacconist:tobacco_leaf_wild_dry",
+  "experience": 0.25,
+  "cookingtime": 10
+}
