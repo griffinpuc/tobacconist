@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "tobacconistmod:block/tobaccoburley0"
+    },
+    "age=1": {
+      "model": "tobacconistmod:block/tobaccoburley1"
+    },
+    "age=2": {
+      "model": "tobacconistmod:block/tobaccoburley2"
+    },
+    "age=3": {
+      "model": "tobacconistmod:block/tobaccoburley3"
+    },
+    "age=4": {
+      "model": "tobacconistmod:block/tobaccoburley4"
+    },
+    "age=5": {
+      "model": "tobacconistmod:block/tobaccoburley5"
+    },
+    "age=6": {
+      "model": "tobacconistmod:block/tobaccoburley6"
+    },
+    "age=7": {
+      "model": "tobacconistmod:block/tobaccoburley7"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 package com.diggydwarff.tobacconistmod.datagen.loot;
 
 import com.diggydwarff.tobacconistmod.block.ModBlocks;
-import com.diggydwarff.tobacconistmod.block.custom.WildCropBlock;
+import com.diggydwarff.tobacconistmod.block.custom.*;
 import com.diggydwarff.tobacconistmod.items.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -24,62 +24,44 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         LootItemCondition.Builder wildBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.WILD_TOBACCO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))
-                .or(LootItemBlockStatePropertyCondition
-                        .hasBlockStateProperties(ModBlocks.WILD_TOBACCO_CROP.get())
-                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 6)));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 7));
 
         LootItemCondition.Builder virginiaBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.VIRGINIA_TOBACCO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))
-                .or(LootItemBlockStatePropertyCondition
-                        .hasBlockStateProperties(ModBlocks.VIRGINIA_TOBACCO_CROP.get())
-                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 6)));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(VirginiaCropBlock.AGE, 7));
 
         LootItemCondition.Builder burleyBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.BURLEY_TOBACCO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))
-                .or(LootItemBlockStatePropertyCondition
-                        .hasBlockStateProperties(ModBlocks.BURLEY_TOBACCO_CROP.get())
-                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 6)));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BurleyCropBlock.AGE, 7));
 
         LootItemCondition.Builder dokhaBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.DOKHA_TOBACCO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))
-                .or(LootItemBlockStatePropertyCondition
-                        .hasBlockStateProperties(ModBlocks.DOKHA_TOBACCO_CROP.get())
-                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 6)));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DokhaCropBlock.AGE, 7));
 
         LootItemCondition.Builder orientalBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.ORIENTAL_TOBACCO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))
-                .or(LootItemBlockStatePropertyCondition
-                        .hasBlockStateProperties(ModBlocks.ORIENTAL_TOBACCO_CROP.get())
-                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 6)));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OrientalCropBlock.AGE, 7));
 
         LootItemCondition.Builder shadeBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.SHADE_TOBACCO_CROP.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))
-                .or(LootItemBlockStatePropertyCondition
-                        .hasBlockStateProperties(ModBlocks.SHADE_TOBACCO_CROP.get())
-                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 6)));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ShadeCropBlock.AGE, 7));
 
         this.add(ModBlocks.WILD_TOBACCO_CROP.get(), createCropDrops(ModBlocks.WILD_TOBACCO_CROP.get(), ModItems.WILD_TOBACCO_LEAF.get(),
                 ModItems.WILD_TOBACCO_SEEDS.get(), wildBuilder));
 
-        this.add(ModBlocks.VIRGINIA_TOBACCO_CROP.get(), createCropDrops(ModBlocks.WILD_TOBACCO_CROP.get(), ModItems.WILD_TOBACCO_LEAF.get(),
+        this.add(ModBlocks.VIRGINIA_TOBACCO_CROP.get(), createCropDrops(ModBlocks.VIRGINIA_TOBACCO_CROP.get(), ModItems.VIRGINIA_TOBACCO_LEAF.get(),
                 ModItems.VIRGINIA_TOBACCO_SEEDS.get(), virginiaBuilder));
 
-        this.add(ModBlocks.BURLEY_TOBACCO_CROP.get(), createCropDrops(ModBlocks.WILD_TOBACCO_CROP.get(), ModItems.WILD_TOBACCO_LEAF.get(),
+        this.add(ModBlocks.BURLEY_TOBACCO_CROP.get(), createCropDrops(ModBlocks.BURLEY_TOBACCO_CROP.get(), ModItems.BURLEY_TOBACCO_LEAF.get(),
                 ModItems.BURLEY_TOBACCO_SEEDS.get(), burleyBuilder));
 
-        this.add(ModBlocks.DOKHA_TOBACCO_CROP.get(), createCropDrops(ModBlocks.WILD_TOBACCO_CROP.get(), ModItems.WILD_TOBACCO_LEAF.get(),
+        this.add(ModBlocks.DOKHA_TOBACCO_CROP.get(), createCropDrops(ModBlocks.DOKHA_TOBACCO_CROP.get(), ModItems.DOKHA_TOBACCO_LEAF.get(),
                 ModItems.DOKHA_TOBACCO_SEEDS.get(), dokhaBuilder));
 
-        this.add(ModBlocks.ORIENTAL_TOBACCO_CROP.get(), createCropDrops(ModBlocks.WILD_TOBACCO_CROP.get(), ModItems.WILD_TOBACCO_LEAF.get(),
+        this.add(ModBlocks.ORIENTAL_TOBACCO_CROP.get(), createCropDrops(ModBlocks.ORIENTAL_TOBACCO_CROP.get(), ModItems.ORIENTAL_TOBACCO_LEAF.get(),
                 ModItems.ORIENTAL_TOBACCO_SEEDS.get(), orientalBuilder));
 
-        this.add(ModBlocks.SHADE_TOBACCO_CROP.get(), createCropDrops(ModBlocks.WILD_TOBACCO_CROP.get(), ModItems.WILD_TOBACCO_LEAF.get(),
+        this.add(ModBlocks.SHADE_TOBACCO_CROP.get(), createCropDrops(ModBlocks.SHADE_TOBACCO_CROP.get(), ModItems.SHADE_TOBACCO_LEAF.get(),
                 ModItems.SHADE_TOBACCO_SEEDS.get(), shadeBuilder));
 
     }

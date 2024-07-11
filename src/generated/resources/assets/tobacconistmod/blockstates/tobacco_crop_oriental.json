@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "tobacconistmod:block/tobaccooriental0"
+    },
+    "age=1": {
+      "model": "tobacconistmod:block/tobaccooriental1"
+    },
+    "age=2": {
+      "model": "tobacconistmod:block/tobaccooriental2"
+    },
+    "age=3": {
+      "model": "tobacconistmod:block/tobaccooriental3"
+    },
+    "age=4": {
+      "model": "tobacconistmod:block/tobaccooriental4"
+    },
+    "age=5": {
+      "model": "tobacconistmod:block/tobaccooriental5"
+    },
+    "age=6": {
+      "model": "tobacconistmod:block/tobaccooriental6"
+    },
+    "age=7": {
+      "model": "tobacconistmod:block/tobaccooriental7"
+    }
+  }
+}

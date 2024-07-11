@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "tobacconistmod:block/tobaccoshade0"
+    },
+    "age=1": {
+      "model": "tobacconistmod:block/tobaccoshade1"
+    },
+    "age=2": {
+      "model": "tobacconistmod:block/tobaccoshade2"
+    },
+    "age=3": {
+      "model": "tobacconistmod:block/tobaccoshade3"
+    },
+    "age=4": {
+      "model": "tobacconistmod:block/tobaccoshade4"
+    },
+    "age=5": {
+      "model": "tobacconistmod:block/tobaccoshade5"
+    },
+    "age=6": {
+      "model": "tobacconistmod:block/tobaccoshade6"
+    },
+    "age=7": {
+      "model": "tobacconistmod:block/tobaccoshade7"
+    }
+  }
+}
