@@ -2,7 +2,7 @@ package com.diggydwarff.tobacconistmod.datagen;
 
 import com.diggydwarff.tobacconistmod.TobacconistMod;
 import com.diggydwarff.tobacconistmod.block.ModBlocks;
-import com.diggydwarff.tobacconistmod.block.custom.WildCropBlock;
+import com.diggydwarff.tobacconistmod.block.custom.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -25,25 +25,49 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.HOOKAH);
 
-        makeTobaccoCrop(((CropBlock) ModBlocks.WILD_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
-        makeTobaccoCrop(((CropBlock) ModBlocks.VIRGINIA_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
-        makeTobaccoCrop(((CropBlock) ModBlocks.SHADE_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
-        makeTobaccoCrop(((CropBlock) ModBlocks.BURLEY_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
-        makeTobaccoCrop(((CropBlock) ModBlocks.DOKHA_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
-        makeTobaccoCrop(((CropBlock) ModBlocks.ORIENTAL_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
+        makeTobaccoCrop(((CropBlock) ModBlocks.WILD_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage", "wild");
+        makeTobaccoCrop(((CropBlock) ModBlocks.VIRGINIA_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage", "virginia");
+        makeTobaccoCrop(((CropBlock) ModBlocks.SHADE_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage", "shade");
+        makeTobaccoCrop(((CropBlock) ModBlocks.BURLEY_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage", "burley");
+        makeTobaccoCrop(((CropBlock) ModBlocks.DOKHA_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage", "dokha");
+        makeTobaccoCrop(((CropBlock) ModBlocks.ORIENTAL_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage", "oriental");
 
     }
 
-    public void makeTobaccoCrop(CropBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> tobaccoStates(state, block, modelName, textureName);
-
+    public void makeTobaccoCrop(CropBlock block, String modelName, String textureName, String type) {
+        Function<BlockState, ConfiguredModel[]> function = state -> tobaccoStates(state, block, modelName, textureName, type);
         getVariantBuilder(block).forAllStates(function);
     }
 
-    private ConfiguredModel[] tobaccoStates(BlockState state, CropBlock block, String modelName, String textureName) {
+    private ConfiguredModel[] tobaccoStates(BlockState state, CropBlock block, String modelName, String textureName, String type) {
         ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((WildCropBlock) block).getAgeProperty()),
-                new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((WildCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        switch (type) {
+            case "wild":
+                models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((WildCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((WildCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                break;
+            case "virginia":
+                models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((VirginiaCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((VirginiaCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                break;
+            case "shade":
+                models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((ShadeCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((ShadeCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                break;
+            case "burley":
+                models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((BurleyCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((BurleyCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                break;
+            case "dokha":
+                models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((DokhaCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((DokhaCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                break;
+            case "oriental":
+                models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((OrientalCropBlock) block).getAgeProperty()),
+                        new ResourceLocation(TobacconistMod.MODID, "block/" + textureName + state.getValue(((OrientalCropBlock) block).getAgeProperty()))).renderType("cutout"));
+                break;
+        }
 
         return models;
     }
