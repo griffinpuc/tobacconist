@@ -1,10 +1,12 @@
 package com.diggydwarff.tobacconistmod.datagen;
 
 import com.diggydwarff.tobacconistmod.TobacconistMod;
+import com.diggydwarff.tobacconistmod.block.ModBlocks;
 import com.diggydwarff.tobacconistmod.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -42,13 +44,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ORIENTAL_TOBACCO_SEEDS);
         simpleItem(ModItems.DOKHA_TOBACCO_SEEDS);
         simpleItem(ModItems.SHADE_TOBACCO_SEEDS);
+
 */
+        simpleBlockItemBlockTexture(ModBlocks.WILD_FLOWERING_TOBACCO);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(TobacconistMod.MODID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TobacconistMod.MODID,"block/" + item.getId().getPath()));
     }
 
 }

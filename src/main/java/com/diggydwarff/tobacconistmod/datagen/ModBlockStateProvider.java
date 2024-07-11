@@ -30,6 +30,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeTobaccoCrop(((CropBlock) ModBlocks.DOKHA_TOBACCO_CROP.get()), "tobaccodokha", "tobaccodokha", "dokha");
         makeTobaccoCrop(((CropBlock) ModBlocks.ORIENTAL_TOBACCO_CROP.get()), "tobaccooriental", "tobaccooriental", "oriental");
 
+        simpleBlockWithItem(ModBlocks.WILD_FLOWERING_TOBACCO.get(), models().cross(blockTexture(ModBlocks.WILD_FLOWERING_TOBACCO.get()).getPath(),
+                blockTexture(ModBlocks.WILD_FLOWERING_TOBACCO.get())).renderType("cutout"));
+
     }
 
     public void makeTobaccoCrop(CropBlock block, String modelName, String textureName, String type) {

@@ -64,6 +64,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SHADE_TOBACCO_CROP.get(), createCropDrops(ModBlocks.SHADE_TOBACCO_CROP.get(), ModItems.SHADE_TOBACCO_LEAF.get(),
                 ModItems.SHADE_TOBACCO_SEEDS.get(), shadeBuilder));
 
+        this.add(ModBlocks.WILD_FLOWERING_TOBACCO.get(), createCropDrops(ModBlocks.WILD_FLOWERING_TOBACCO.get(), ModItems.WILD_TOBACCO_LEAF.get(),
+                ModItems.WILD_TOBACCO_SEEDS.get(), LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.WILD_FLOWERING_TOBACCO.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties())));
+
     }
 
 

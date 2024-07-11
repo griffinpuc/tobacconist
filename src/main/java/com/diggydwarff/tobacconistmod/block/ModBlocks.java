@@ -4,11 +4,13 @@ import com.diggydwarff.tobacconistmod.TobacconistCreativeTab;
 import com.diggydwarff.tobacconistmod.TobacconistMod;
 import com.diggydwarff.tobacconistmod.block.custom.*;
 import com.diggydwarff.tobacconistmod.items.ModItems;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +25,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> HOOKAH = registerBlock("hookah_block",
             () -> new HookahBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(6f).requiresCorrectToolForDrops().noOcclusion().noLootTable()));
 
+    public static final RegistryObject<Block> WILD_FLOWERING_TOBACCO = registerBlock("wild_flowering_tobacco",
+            () -> new FlowerBlock(() -> MobEffects.CONFUSION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
     public static final RegistryObject<Block> WILD_TOBACCO_CROP = BLOCKS.register("tobacco_crop_wild",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 

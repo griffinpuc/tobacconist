@@ -1,10 +1,11 @@
-// 1.20.1	2024-07-11T10:02:42.978305	Block States: tobacconistmod
+// 1.20.1	2024-07-11T10:53:49.1131511	Block States: tobacconistmod
 c53d857afad0c158267ec264b6747a4067215d42 assets/tobacconistmod/blockstates/tobacco_crop_burley.json
 bf9f1a238476fa11235984d52799b37018401355 assets/tobacconistmod/blockstates/tobacco_crop_dokha.json
 7423e416200a593b3972d7f456c90abf67ef172a assets/tobacconistmod/blockstates/tobacco_crop_oriental.json
 786f94ac1a5d0b73a290ae988de2b8fcbc55bdeb assets/tobacconistmod/blockstates/tobacco_crop_shade.json
 1def3f1d112fb6e9ff71e8d8a8952087a06e2081 assets/tobacconistmod/blockstates/tobacco_crop_virginia.json
 1e18fd53c3231e2a77b9f6c2780ce41e780d8078 assets/tobacconistmod/blockstates/tobacco_crop_wild.json
+5b42a32dd93043980327b2603c81cddef7476165 assets/tobacconistmod/blockstates/wild_flowering_tobacco.json
 dc8affcd3a60bf503d3dfe5bc655b2edd414b67e assets/tobacconistmod/models/block/tobaccoburley0.json
 c8c775a6b11c5453eed29dad702d203f5a603e47 assets/tobacconistmod/models/block/tobaccoburley1.json
 2763c741100c7d5a177602598fdb264096f49700 assets/tobacconistmod/models/block/tobaccoburley2.json
@@ -53,3 +54,5 @@ bb9764b6a9e9f434e1b770784c7f7a0de92df3e4 assets/tobacconistmod/models/block/toba
 ee0ea58c4e0c03901fb5c3cd2bdfa68d7d945ff1 assets/tobacconistmod/models/block/tobaccowild5.json
 652479489469eda7e57365391bcf62c8ad58974a assets/tobacconistmod/models/block/tobaccowild6.json
 477044531adccc8d5dd0353feba358abfc76193c assets/tobacconistmod/models/block/tobaccowild7.json
+cc9661fcf4a418769625a267785b1a6c15c0f564 assets/tobacconistmod/models/block/wild_flowering_tobacco.json
+51d1115d08d05a5ddee80784c01e988b95e2a082 assets/tobacconistmod/models/item/wild_flowering_tobacco.json

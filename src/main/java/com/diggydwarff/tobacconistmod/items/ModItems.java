@@ -55,6 +55,14 @@ public class ModItems {
     public static final RegistryObject<Item> DOKHA_TOBACCO_LEAF_DRY = ITEMS.register("tobacco_leaf_dokha_dry", () -> new TobaccoLeafItem(new Item.Properties()));
     public static final RegistryObject<Item> SHADE_TOBACCO_LEAF_DRY = ITEMS.register("tobacco_leaf_shade_dry", () -> new TobaccoLeafItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> TOBACCO_LOOSE_WILD = ITEMS.register("tobacco_loose_wild", () -> LooseTobacco.TOBACCO_LOOSE_WILD.getItem());
+    public static final RegistryObject<Item> TOBACCO_LOOSE_VIRGINIA = ITEMS.register("tobacco_loose_virginia", () -> LooseTobacco.TOBACCO_LOOSE_VIRGINIA.getItem());
+    public static final RegistryObject<Item> TOBACCO_LOOSE_BURLEY = ITEMS.register("tobacco_loose_burley", () -> LooseTobacco.TOBACCO_LOOSE_BURLEY.getItem());
+    public static final RegistryObject<Item> TOBACCO_LOOSE_ORIENTAL = ITEMS.register("tobacco_loose_oriental", () -> LooseTobacco.TOBACCO_LOOSE_ORIENTAL.getItem());
+    public static final RegistryObject<Item> TOBACCO_LOOSE_DOKHA = ITEMS.register("tobacco_loose_dokha", () -> LooseTobacco.TOBACCO_LOOSE_DOKHA.getItem());
+    public static final RegistryObject<Item> TOBACCO_LOOSE_SHADE = ITEMS.register("tobacco_loose_shade", () -> LooseTobacco.TOBACCO_LOOSE_SHADE.getItem());
+    public static final RegistryObject<Item> BOTTLED_MOLASSES_PLAIN = ITEMS.register("bottled_molasses_plain", () -> BottledMolassesFlavors.BOTTLED_MOLASSES_PLAIN.getItem());
+
     // TOBACCO SEED ITEMS
     public static final RegistryObject<Item> WILD_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_wild",
             () -> new ItemNameBlockItem(ModBlocks.WILD_TOBACCO_CROP.get(), new Item.Properties()));

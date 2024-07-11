@@ -2,6 +2,8 @@ package com.diggydwarff.tobacconistmod;
 
 import com.diggydwarff.tobacconistmod.block.ModBlocks;
 import com.diggydwarff.tobacconistmod.items.ModItems;
+import com.diggydwarff.tobacconistmod.items.custom.LooseTobacco;
+import com.diggydwarff.tobacconistmod.items.custom.LooseTobaccoItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -29,18 +31,32 @@ public class TobacconistCreativeTab  {
                         output.accept(CIGARETTE.get());
                         output.accept(HOOKAH_HOSE.get());
                         output.accept(SHISHA_TOBACCO.get());
+
+                        output.accept(BOTTLED_MOLASSES_PLAIN.get());
+
+                        output.accept(ModBlocks.WILD_FLOWERING_TOBACCO.get());
+
                         output.accept(WILD_TOBACCO_LEAF.get());
                         output.accept(VIRGINIA_TOBACCO_LEAF.get());
                         output.accept(BURLEY_TOBACCO_LEAF.get());
                         output.accept(ORIENTAL_TOBACCO_LEAF.get());
                         output.accept(DOKHA_TOBACCO_LEAF.get());
                         output.accept(SHADE_TOBACCO_LEAF.get());
+
                         output.accept(WILD_TOBACCO_LEAF_DRY.get());
                         output.accept(VIRGINIA_TOBACCO_LEAF_DRY.get());
                         output.accept(BURLEY_TOBACCO_LEAF_DRY.get());
                         output.accept(ORIENTAL_TOBACCO_LEAF_DRY.get());
                         output.accept(DOKHA_TOBACCO_LEAF_DRY.get());
                         output.accept(SHADE_TOBACCO_LEAF_DRY.get());
+
+                        output.accept(TOBACCO_LOOSE_WILD.get());
+                        output.accept(TOBACCO_LOOSE_VIRGINIA.get());
+                        output.accept(TOBACCO_LOOSE_BURLEY.get());
+                        output.accept(TOBACCO_LOOSE_ORIENTAL.get());
+                        output.accept(TOBACCO_LOOSE_DOKHA.get());
+                        output.accept(TOBACCO_LOOSE_SHADE.get());
+
                         output.accept(WILD_TOBACCO_SEEDS.get());
                         output.accept(VIRGINIA_TOBACCO_SEEDS.get());
                         output.accept(BURLEY_TOBACCO_SEEDS.get());
