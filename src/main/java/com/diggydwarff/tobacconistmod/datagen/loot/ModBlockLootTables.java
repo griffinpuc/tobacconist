@@ -22,8 +22,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
-        this.dropSelf(ModBlocks.HOOKAH.get());
-
         LootItemCondition.Builder wildBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.WILD_TOBACCO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(WildCropBlock.AGE, 5))

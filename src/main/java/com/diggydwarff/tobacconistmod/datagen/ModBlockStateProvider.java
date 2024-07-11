@@ -26,6 +26,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.HOOKAH);
 
         makeTobaccoCrop(((CropBlock) ModBlocks.WILD_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
+        makeTobaccoCrop(((CropBlock) ModBlocks.VIRGINIA_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
+        makeTobaccoCrop(((CropBlock) ModBlocks.SHADE_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
+        makeTobaccoCrop(((CropBlock) ModBlocks.BURLEY_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
+        makeTobaccoCrop(((CropBlock) ModBlocks.DOKHA_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
+        makeTobaccoCrop(((CropBlock) ModBlocks.ORIENTAL_TOBACCO_CROP.get()), "tobacco_stage", "tobacco_stage");
 
     }
 
