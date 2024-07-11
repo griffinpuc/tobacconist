@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tobacconistmod:bottled_molasses_plain"
+    },
+    [
+      {
+        "item": "minecraft:cake"
+      },
+      {
+        "item": "farmersdelight:cake_slice"
+      }
+    ]
+  ],
+  "result": {
+    "item": "tobacconistmod:bottled_molasses_cake_flavor",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tobacconistmod:block/hookah_block"
+    },
+    "facing=south": {
+      "model": "tobacconistmod:block/hookah_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tobacconistmod:block/hookah_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "tobacconistmod:block/hookah_block",
+      "y": 90
+    }
+  }
+}

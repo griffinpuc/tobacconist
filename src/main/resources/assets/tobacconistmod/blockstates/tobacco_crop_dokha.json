@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0,top=false": { "model": "tobacconistmod:block/tobacco_stage0" },
+    "age=1,top=false": { "model": "tobacconistmod:block/tobacco_stage1" },
+    "age=2,top=false": { "model": "tobacconistmod:block/tobacco_stage2" },
+    "age=3,top=false": { "model": "tobacconistmod:block/tobacco_stage3" },
+    "age=4,top=false": { "model": "tobacconistmod:block/tobacco_stage4" },
+    "top=true": { "model": "tobacconistmod:block/tobacco_stage5" }
+  }
+}
