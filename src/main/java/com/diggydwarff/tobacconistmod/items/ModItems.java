@@ -57,28 +57,22 @@ public class ModItems {
 
     // TOBACCO SEED ITEMS
     public static final RegistryObject<Item> WILD_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_wild",
-            () -> new ItemNameBlockItem(ModBlocks.WILD_TOBACCO_CROP.get(),
-                    new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.WILD_TOBACCO_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> VIRGINIA_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_virginia",
-            () -> new ItemNameBlockItem(ModBlocks.VIRGINIA_TOBACCO_CROP.get(),
-                    new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.VIRGINIA_TOBACCO_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> BURLEY_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_burley",
-            () -> new ItemNameBlockItem(ModBlocks.BURLEY_TOBACCO_CROP.get(),
-                    new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.BURLEY_TOBACCO_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> ORIENTAL_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_oriental",
-            () -> new ItemNameBlockItem(ModBlocks.ORIENTAL_TOBACCO_CROP.get(),
-                    new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.ORIENTAL_TOBACCO_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> DOKHA_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_dokha",
-            () -> new ItemNameBlockItem(ModBlocks.DOKHA_TOBACCO_CROP.get(),
-                    new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.DOKHA_TOBACCO_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> SHADE_TOBACCO_SEEDS = ITEMS.register("tobacco_seeds_shade",
-            () -> new ItemNameBlockItem(ModBlocks.SHADE_TOBACCO_CROP.get(),
-                    new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.SHADE_TOBACCO_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
