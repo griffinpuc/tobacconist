@@ -42,8 +42,13 @@ public class ShadeCropBlock extends CropBlock {
             }
 
             if(nextAge > FIRST_STAGE_MAX_AGE) {
-                pLevel.setBlock(pPos.above(1), this.getStateForAge(nextAge), 2);
-                pLevel.setBlock(pPos, this.getStateForAge(FIRST_STAGE_MAX_AGE), 2);
+                if(pLevel.getBlockState(pPos.below(1)).is(this)){
+                    pLevel.setBlock(pPos.below(1), this.getStateForAge(FIRST_STAGE_MAX_AGE), 2);
+                    pLevel.setBlock(pPos, this.getStateForAge(nextAge), 2);
+                } else{
+                    pLevel.setBlock(pPos.above(1), this.getStateForAge(nextAge), 2);
+                    pLevel.setBlock(pPos, this.getStateForAge(FIRST_STAGE_MAX_AGE), 2);
+                }
             }
             else {
                 pLevel.setBlock(pPos, this.getStateForAge(nextAge), 2);
@@ -73,8 +78,13 @@ public class ShadeCropBlock extends CropBlock {
         }
 
         if(nextAge > FIRST_STAGE_MAX_AGE) {
-            pLevel.setBlock(pPos.above(1), this.getStateForAge(nextAge), 2);
-            pLevel.setBlock(pPos, this.getStateForAge(FIRST_STAGE_MAX_AGE), 2);
+            if(pLevel.getBlockState(pPos.below(1)).is(this)){
+                pLevel.setBlock(pPos.below(1), this.getStateForAge(FIRST_STAGE_MAX_AGE), 2);
+                pLevel.setBlock(pPos, this.getStateForAge(nextAge), 2);
+            } else{
+                pLevel.setBlock(pPos.above(1), this.getStateForAge(nextAge), 2);
+                pLevel.setBlock(pPos, this.getStateForAge(FIRST_STAGE_MAX_AGE), 2);
+            }
         }
         else {
             pLevel.setBlock(pPos, this.getStateForAge(nextAge), 2);
