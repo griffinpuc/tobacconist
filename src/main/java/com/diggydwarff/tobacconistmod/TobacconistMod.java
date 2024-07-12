@@ -1,5 +1,6 @@
 package com.diggydwarff.tobacconistmod;
 
+import com.diggydwarff.tobacconistmod.effect.ModEffects;
 import com.mojang.logging.LogUtils;
 import com.diggydwarff.tobacconistmod.block.ModBlocks;
 import com.diggydwarff.tobacconistmod.block.entity.ModBlockEntities;
@@ -61,6 +62,7 @@ public class TobacconistMod
         ModVillagers.register(modEventBus);
         ModRecipes.register(modEventBus);
 
+        ModEffects.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 

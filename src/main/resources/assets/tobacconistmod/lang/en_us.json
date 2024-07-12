@@ -96,5 +96,7 @@
 
   "block.tobacconistmod.hookah_block": "Hookah",
 
-  "entity.minecraft.villager.tobacconist_master": "Tobacconsit Master"
+  "entity.minecraft.villager.tobacconist_master": "Tobacconsit Master",
+
+  "effect.tobacconistmod.nicotine": "Nicotine"
 }

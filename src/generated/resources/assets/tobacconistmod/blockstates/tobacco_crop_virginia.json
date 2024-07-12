@@ -1,28 +1,28 @@
 {
   "variants": {
     "age=0": {
-      "model": "tobacconistmod:block/tobaccovirginia0"
+      "model": "tobacconistmod:block/tobacco0"
     },
     "age=1": {
-      "model": "tobacconistmod:block/tobaccovirginia1"
+      "model": "tobacconistmod:block/tobacco1"
     },
     "age=2": {
-      "model": "tobacconistmod:block/tobaccovirginia2"
+      "model": "tobacconistmod:block/tobacco2"
     },
     "age=3": {
-      "model": "tobacconistmod:block/tobaccovirginia3"
+      "model": "tobacconistmod:block/tobacco3"
     },
     "age=4": {
-      "model": "tobacconistmod:block/tobaccovirginia4"
+      "model": "tobacconistmod:block/tobacco4"
     },
     "age=5": {
-      "model": "tobacconistmod:block/tobaccovirginia5"
+      "model": "tobacconistmod:block/tobacco5"
     },
     "age=6": {
-      "model": "tobacconistmod:block/tobaccovirginia6"
+      "model": "tobacconistmod:block/tobacco6"
     },
     "age=7": {
-      "model": "tobacconistmod:block/tobaccovirginia7"
+      "model": "tobacconistmod:block/tobacco7"
     }
   }
 }

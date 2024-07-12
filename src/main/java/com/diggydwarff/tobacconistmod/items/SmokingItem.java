@@ -1,10 +1,12 @@
 package com.diggydwarff.tobacconistmod.items;
 
+import com.diggydwarff.tobacconistmod.effect.ModEffects;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -50,6 +52,9 @@ public abstract class SmokingItem extends Item {
             Vec3 mergeVec = look.add(newVec);
             level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, player.getX()+mergeVec.x, player.getY()+1.4+mergeVec.y, player.getZ()+mergeVec.z, smokelevel, 0, 0, 0, 0);
         }
+
+        player.addEffect(new MobEffectInstance(ModEffects.NICOTINE.get(), 500, 0));
+
     }
 
 }

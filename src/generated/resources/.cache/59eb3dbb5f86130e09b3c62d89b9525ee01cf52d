@@ -1,8 +1,8 @@
-// 1.20.1	2024-07-11T10:59:38.1680635	Loot Tables
+// 1.20.1	2024-07-12T12:12:14.6265982	Loot Tables
 4cdd0da366897082a97ff66c2e3190deb990de4d data/tobacconistmod/loot_tables/blocks/tobacco_crop_burley.json
 ef8b62b7ad74cae292b9786f35b0adf97c436bb5 data/tobacconistmod/loot_tables/blocks/tobacco_crop_dokha.json
 ee548b3a4c3f2736b221fd4207fb59bb3750745d data/tobacconistmod/loot_tables/blocks/tobacco_crop_oriental.json
 834a9cc06d8549fd5efc7e22ba0816660f78782c data/tobacconistmod/loot_tables/blocks/tobacco_crop_shade.json
 84b2d17b04d976a4be7fe2566d7e9c2e8d78e5df data/tobacconistmod/loot_tables/blocks/tobacco_crop_virginia.json
 e97fc75d8e17804ec8ccae08d842cf5dd71ad3a1 data/tobacconistmod/loot_tables/blocks/tobacco_crop_wild.json
-aa2cc9a14f5c0e10f48767e2dd6e638e0b1a4142 data/tobacconistmod/loot_tables/blocks/wild_flowering_tobacco.json
+bbdcc86ebd2918debfe4415617ee5dfc09ac5d77 data/tobacconistmod/loot_tables/blocks/wild_flowering_tobacco.json
