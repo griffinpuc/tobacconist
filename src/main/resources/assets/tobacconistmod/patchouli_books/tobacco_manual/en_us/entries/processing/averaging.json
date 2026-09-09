@@ -57,10 +57,17 @@
       "type": "patchouli:relations",
       "entries": [
         "tobacconistmod:processing/blending",
-        "tobacconistmod:reference/create_integration",
         "tobacconistmod:storage/tobacco_crates"
       ],
       "title": "Related Chapters"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "tobacconistmod:reference/create_integration"
+      ],
+      "title": "Create Integration",
+      "flag": "mod:create"
     }
   ]
 }

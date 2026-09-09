@@ -5,10 +5,13 @@
   "sortnum": 0,
   "pages": [
     {
+      "type": "patchouli:text",
+      "text": "Use any two $(item)Planks$() and two $(item)Sticks$() in the shown 3×3 pattern. The pipe remembers the first plank type used and reflects that wood in its name and appearance."
+    },
+    {
       "type": "patchouli:crafting",
       "recipe": "tobacconistmod:wooden_smoking_pipe",
-      "title": "Wooden Smoking Pipe",
-      "text": "Use any two $(item)Planks$() and two $(item)Sticks$() in the shown 3×3 pattern. The pipe remembers the first plank type used and reflects that wood in its name and appearance."
+      "title": "Wooden Smoking Pipe"
     },
     {
       "type": "patchouli:text",
